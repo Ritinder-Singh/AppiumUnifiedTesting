@@ -1,45 +1,49 @@
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
+# Application Automation Testing Framework with TestNG, Selenium, Appium, and Java
 
-These are common Git commands used in various situations:
+This is a data-driven testing framework designed to automate mobile application testing on both **iOS** and **Android** using **TestNG**, **Selenium**, **Appium**, and **Java**. The framework fetches test data from a **CSV file** and performs tests accordingly, ensuring efficient testing across multiple platforms.
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
+## Table of Contents
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+- [How to Run Tests](#how-to-run-tests)
+- [Test Data](#test-data)
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
+## Introduction
 
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
+This framework allows for automated testing of mobile applications on both **iOS** and **Android** devices using the **Selenium WebDriver** and **Appium**. The framework follows the **Data-Driven Testing** approach, where the test data is fetched from a **CSV file**. **TestNG** is used for managing test execution, reporting, and providing various configuration options.
 
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
+**Appium** is used as the primary tool to interact with mobile applications, supporting both **native** and **hybrid apps** across multiple platforms like **Android** and **iOS**.
 
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
+## Technologies Used
 
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+- **Java**: Programming language used for the framework.
+- **TestNG**: Test framework used for managing test execution, reporting, and configuration.
+- **Selenium WebDriver**: Automation tool used to interact with the mobile applications.
+- **Appium**: Mobile automation framework used for testing both iOS and Android apps.
+- **CSV Files**: Test data source to provide inputs to the tests.
+- **Maven**: Dependency management and build automation tool.
+
+## Features
+
+- Supports testing on **iOS** and **Android** platforms.
+- **Data-Driven Testing** using **CSV files** for parameterization.
+- **TestNG** integration for test execution and reporting.
+- Ability to run tests on both real devices and emulators/simulators.
+- **Appium** integration for mobile-specific interactions.
+- Detailed **test reports** after execution.
+
+## Prerequisites
+
+Before running the tests, ensure you have the following setup:
+
+1. **Java 8+** installed.
+2. **Maven** installed (for dependency management).
+3. **TestNG** dependencies configured.
+4. **Appium Server** installed and running.
+5. **Android Studio** and **Xcode** (for running tests on Android and iOS respectively).
+6. **Android SDK** and **iOS simulators** set up for testing.
+7. **CSV file** containing test data (explained below).
+8. Ensure **Appium**, **Selenium WebDriver**, and **Android/iOS drivers** are set up in your project dependencies.
